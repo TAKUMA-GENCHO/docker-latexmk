@@ -14,8 +14,9 @@ RUN apt install -y \
       texlive-lang-cjk \
       texlive-fonts-recommended \
       texlive-fonts-extra \
+      texlive-science \
       latexmk
 
-ENV HOME /home/user      
+ENV HOME /home/user
 RUN mkdir /home/user
 COPY .latexmkrc /home/user/
